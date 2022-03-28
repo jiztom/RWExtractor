@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE RoboticsSystem><system>
+    <plugin name="CAN Extractor0" type="CAN Extractor">
+        <defaultDirectoryPath>D:/Software/Murphy/Output/NW19circle_3E_c4-00-ad-10-bf-32_2022-03-15_135231_00003_perceptionLog_split00001/CanLog</defaultDirectoryPath>
+        <logNameBase>CANLog</logNameBase>
+        <autoNaming>1</autoNaming>
+        <loggerID>0</loggerID>
+        <cansniffOn>1</cansniffOn>
+        <canalyzerOn>1</canalyzerOn>
+        <maxBufferSize>65535</maxBufferSize>
+        <onlineMode>0</onlineMode>
+        <split>0</split>
+        <splitSize>1024</splitSize>
+    </plugin>
+    <plugin name="Contrast" type="Image Filter" version="0.1">
+        <filterType>18</filterType>
+        <homogeneousKernelX>3</homogeneousKernelX>
+        <homogeneousKernelY>3</homogeneousKernelY>
+        <gaussianKernelX>3</gaussianKernelX>
+        <gaussianKernelY>3</gaussianKernelY>
+        <gaussianSigmaX>0</gaussianSigmaX>
+        <gaussianSigmaY>0</gaussianSigmaY>
+        <medianKernel>3</medianKernel>
+        <bilateralDiameter>0</bilateralDiameter>
+        <bilateralSigmaColor>0</bilateralSigmaColor>
+        <bilateralSigmaSpace>1</bilateralSigmaSpace>
+        <maskSlot>99</maskSlot>
+        <maskLabelIds />
+        <morphologyIteration>1</morphologyIteration>
+        <morphologyKernelX>0</morphologyKernelX>
+        <morphologyKernelY>0</morphologyKernelY>
+        <structureElementtype>0</structureElementtype>
+        <blobSize>0</blobSize>
+        <oldValue>0</oldValue>
+        <newValue>0</newValue>
+        <clipLimit>64</clipLimit>
+        <tileWidth>8</tileWidth>
+        <tileHeight>8</tileHeight>
+        <filter2DString>[1.0, 1.0, 1.0] [1.0, 1.0, 1.0] [1.0, 1.0, 1.0] </filter2DString>
+        <filter2DDelta>0</filter2DDelta>
+        <minRangePercentile>0</minRangePercentile>
+        <maxRangePercentile>99</maxRangePercentile>
+        <slots />
+        <useGpu>0</useGpu>
+    </plugin>
+    <plugin name="Data Filter0" type="Data Filter" version="1.0">
+        <enabledStruct_3>0</enabledStruct_3>
+        <enabledStruct_32>0</enabledStruct_32>
+        <enabledStruct_33>0</enabledStruct_33>
+        <enabledStruct_60>0</enabledStruct_60>
+        <enabledStruct_68>0</enabledStruct_68>
+        <enabledStruct_75>0</enabledStruct_75>
+        <enabledStruct_82>0</enabledStruct_82>
+        <enabledStruct_94>0</enabledStruct_94>
+        <enabledStruct_104>0</enabledStruct_104>
+        <enabledStruct_106>0</enabledStruct_106>
+        <enabledStruct_107>0</enabledStruct_107>
+        <enabledStruct_111>0</enabledStruct_111>
+        <enabledStruct_112>0</enabledStruct_112>
+        <enabledStruct_113>0</enabledStruct_113>
+        <enabledStruct_114>0</enabledStruct_114>
+        <enabledStruct_122>0</enabledStruct_122>
+        <enabledStruct_123>0</enabledStruct_123>
+        <enabledStruct_124>1</enabledStruct_124>
+        <enabledStruct_125>0</enabledStruct_125>
+        <enabledStruct_128>0</enabledStruct_128>
+        <enabledStruct_133>0</enabledStruct_133>
+        <enabledStruct_139>0</enabledStruct_139>
+        <enabledStruct_10001>0</enabledStruct_10001>
+        <enabledStruct_10002>0</enabledStruct_10002>
+        <enabledStruct_10005>0</enabledStruct_10005>
+        <enabledStruct_10007>0</enabledStruct_10007>
+        <enabledStruct_10009>0</enabledStruct_10009>
+        <enabledStruct_10010>0</enabledStruct_10010>
+        <enabledStruct_10011>0</enabledStruct_10011>
+        <enabledStruct_10012>0</enabledStruct_10012>
+        <enabledStruct_10013>0</enabledStruct_10013>
+        <enabledStruct_10014>0</enabledStruct_10014>
+        <enabledStruct_10015>0</enabledStruct_10015>
+        <enabledStruct_10016>0</enabledStruct_10016>
+        <enabledStruct_10025>0</enabledStruct_10025>
+        <enabledStruct_10027>0</enabledStruct_10027>
+        <enabledStruct_10030>0</enabledStruct_10030>
+        <enabledStruct_10100>0</enabledStruct_10100>
+        <enabledId_3>0</enabledId_3>
+        <enabledId_32>0</enabledId_32>
+        <enabledId_33>0</enabledId_33>
+        <enabledId_60>0</enabledId_60>
+        <enabledId_68>0</enabledId_68>
+        <enabledId_75>0</enabledId_75>
+        <enabledId_82>0</enabledId_82>
+        <enabledId_94>0</enabledId_94>
+        <enabledId_104>0</enabledId_104>
+        <enabledId_106>0</enabledId_106>
+        <enabledId_107>0</enabledId_107>
+        <enabledId_111>0</enabledId_111>
+        <enabledId_112>0</enabledId_112>
+        <enabledId_113>0</enabledId_113>
+        <enabledId_114>0</enabledId_114>
+        <enabledId_122>0</enabledId_122>
+        <enabledId_123>0</enabledId_123>
+        <enabledId_124>1</enabledId_124>
+        <enabledId_125>0</enabledId_125>
+        <enabledId_128>0</enabledId_128>
+        <enabledId_133>0</enabledId_133>
+        <enabledId_139>0</enabledId_139>
+        <enabledId_10001>0</enabledId_10001>
+        <enabledId_10002>0</enabledId_10002>
+        <enabledId_10005>0</enabledId_10005>
+        <enabledId_10007>0</enabledId_10007>
+        <enabledId_10009>0</enabledId_10009>
+        <enabledId_10010>0</enabledId_10010>
+        <enabledId_10011>0</enabledId_10011>
+        <enabledId_10012>0</enabledId_10012>
+        <enabledId_10013>0</enabledId_10013>
+        <enabledId_10014>0</enabledId_10014>
+        <enabledId_10015>0</enabledId_10015>
+        <enabledId_10016>0</enabledId_10016>
+        <enabledId_10025>0</enabledId_10025>
+        <enabledId_10027>0</enabledId_10027>
+        <enabledId_10030>0</enabledId_10030>
+        <enabledId_10100>0</enabledId_10100>
+        <filterById_3 />
+        <filterById_32 />
+        <filterById_33 />
+        <filterById_60 />
+        <filterById_68 />
+        <filterById_75 />
+        <filterById_82 />
+        <filterById_94 />
+        <filterById_104 />
+        <filterById_106 />
+        <filterById_107 />
+        <filterById_111 />
+        <filterById_112 />
+        <filterById_113 />
+        <filterById_114 />
+        <filterById_122 />
+        <filterById_123 />
+        <filterById_124>1,2,99</filterById_124>
+        <filterById_125 />
+        <filterById_128 />
+        <filterById_133 />
+        <filterById_139 />
+        <filterById_10001 />
+        <filterById_10002 />
+        <filterById_10005 />
+        <filterById_10007 />
+        <filterById_10009 />
+        <filterById_10010 />
+        <filterById_10011 />
+        <filterById_10012 />
+        <filterById_10013 />
+        <filterById_10014 />
+        <filterById_10015 />
+        <filterById_10016 />
+        <filterById_10025 />
+        <filterById_10027 />
+        <filterById_10030 />
+        <filterById_10100 />
+        <rateFilter_3>1</rateFilter_3>
+        <rateFilter_32>1</rateFilter_32>
+        <rateFilter_33>1</rateFilter_33>
+        <rateFilter_60>1</rateFilter_60>
+        <rateFilter_68>1</rateFilter_68>
+        <rateFilter_75>1</rateFilter_75>
+        <rateFilter_82>1</rateFilter_82>
+        <rateFilter_94>1</rateFilter_94>
+        <rateFilter_104>1</rateFilter_104>
+        <rateFilter_106>1</rateFilter_106>
+        <rateFilter_107>1</rateFilter_107>
+        <rateFilter_111>1</rateFilter_111>
+        <rateFilter_112>1</rateFilter_112>
+        <rateFilter_113>1</rateFilter_113>
+        <rateFilter_114>1</rateFilter_114>
+        <rateFilter_122>1</rateFilter_122>
+        <rateFilter_123>1</rateFilter_123>
+        <rateFilter_124>1</rateFilter_124>
+        <rateFilter_125>1</rateFilter_125>
+        <rateFilter_128>1</rateFilter_128>
+        <rateFilter_133>1</rateFilter_133>
+        <rateFilter_139>1</rateFilter_139>
+        <rateFilter_10001>1</rateFilter_10001>
+        <rateFilter_10002>1</rateFilter_10002>
+        <rateFilter_10005>1</rateFilter_10005>
+        <rateFilter_10007>1</rateFilter_10007>
+        <rateFilter_10009>1</rateFilter_10009>
+        <rateFilter_10010>1</rateFilter_10010>
+        <rateFilter_10011>1</rateFilter_10011>
+        <rateFilter_10012>1</rateFilter_10012>
+        <rateFilter_10013>1</rateFilter_10013>
+        <rateFilter_10014>1</rateFilter_10014>
+        <rateFilter_10015>1</rateFilter_10015>
+        <rateFilter_10016>1</rateFilter_10016>
+        <rateFilter_10025>1</rateFilter_10025>
+        <rateFilter_10027>1</rateFilter_10027>
+        <rateFilter_10030>1</rateFilter_10030>
+        <rateFilter_10100>1</rateFilter_10100>
+    </plugin>
+    <plugin name="Image Extractor" type="Image Extractor">
+        <directoryPath>D:/Software/Murphy/Output/NW19circle_3E_c4-00-ad-10-bf-32_2022-03-15_135231_00003_perceptionLog_split00001/Images</directoryPath>
+        <baseName>Gator-%ID-%SN-%GT</baseName>
+        <precisionTs>4</precisionTs>
+        <precisionGt>4</precisionGt>
+        <precisionSts>4</precisionSts>
+        <precisionHts>4</precisionHts>
+        <structType_32>0</structType_32>
+        <bmp_32>0</bmp_32>
+        <jpg_32>0</jpg_32>
+        <png_32>0</png_32>
+        <ppm_32>0</ppm_32>
+        <tiff_32>0</tiff_32>
+        <xbm_32>0</xbm_32>
+        <xpm_32>0</xpm_32>
+        <raw_32>0</raw_32>
+        <disparityText_32>0</disparityText_32>
+        <xyzText_32>0</xyzText_32>
+        <structType_33>0</structType_33>
+        <bmp_33>0</bmp_33>
+        <jpg_33>0</jpg_33>
+        <png_33>0</png_33>
+        <ppm_33>0</ppm_33>
+        <tiff_33>0</tiff_33>
+        <xbm_33>0</xbm_33>
+        <xpm_33>0</xpm_33>
+        <raw_33>0</raw_33>
+        <disparityText_33>0</disparityText_33>
+        <xyzText_33>0</xyzText_33>
+        <structType_124>1</structType_124>
+        <bmp_124>0</bmp_124>
+        <jpg_124>0</jpg_124>
+        <png_124>1</png_124>
+        <ppm_124>0</ppm_124>
+        <tiff_124>0</tiff_124>
+        <xbm_124>0</xbm_124>
+        <xpm_124>0</xpm_124>
+        <raw_124>0</raw_124>
+        <disparityText_124>0</disparityText_124>
+        <xyzText_124>0</xyzText_124>
+        <structType_10005>0</structType_10005>
+        <bmp_10005>0</bmp_10005>
+        <jpg_10005>0</jpg_10005>
+        <png_10005>0</png_10005>
+        <ppm_10005>0</ppm_10005>
+        <tiff_10005>0</tiff_10005>
+        <xbm_10005>0</xbm_10005>
+        <xpm_10005>0</xpm_10005>
+        <raw_10005>0</raw_10005>
+        <disparityText_10005>0</disparityText_10005>
+        <xyzText_10005>0</xyzText_10005>
+        <structType_10012>0</structType_10012>
+        <bmp_10012>0</bmp_10012>
+        <jpg_10012>0</jpg_10012>
+        <png_10012>0</png_10012>
+        <ppm_10012>0</ppm_10012>
+        <tiff_10012>0</tiff_10012>
+        <xbm_10012>0</xbm_10012>
+        <xpm_10012>0</xpm_10012>
+        <raw_10012>0</raw_10012>
+        <disparityText_10012>0</disparityText_10012>
+        <xyzText_10012>0</xyzText_10012>
+    </plugin>
+    <plugin name="Image Format Changer0" type="Image Format Changer" version="0.1">
+        <slotNumber>0</slotNumber>
+        <imageFormat>3</imageFormat>
+    </plugin>
+    <plugin name="Jabil NGR" type="Data Filter" version="1.0">
+        <enabledStruct_3>0</enabledStruct_3>
+        <enabledStruct_32>0</enabledStruct_32>
+        <enabledStruct_33>0</enabledStruct_33>
+        <enabledStruct_60>0</enabledStruct_60>
+        <enabledStruct_68>0</enabledStruct_68>
+        <enabledStruct_75>0</enabledStruct_75>
+        <enabledStruct_82>0</enabledStruct_82>
+        <enabledStruct_94>0</enabledStruct_94>
+        <enabledStruct_104>0</enabledStruct_104>
+        <enabledStruct_106>0</enabledStruct_106>
+        <enabledStruct_107>0</enabledStruct_107>
+        <enabledStruct_111>0</enabledStruct_111>
+        <enabledStruct_112>0</enabledStruct_112>
+        <enabledStruct_113>0</enabledStruct_113>
+        <enabledStruct_114>0</enabledStruct_114>
+        <enabledStruct_122>0</enabledStruct_122>
+        <enabledStruct_123>0</enabledStruct_123>
+        <enabledStruct_124>1</enabledStruct_124>
+        <enabledStruct_125>0</enabledStruct_125>
+        <enabledStruct_128>0</enabledStruct_128>
+        <enabledStruct_133>0</enabledStruct_133>
+        <enabledStruct_139>0</enabledStruct_139>
+        <enabledStruct_10001>0</enabledStruct_10001>
+        <enabledStruct_10002>0</enabledStruct_10002>
+        <enabledStruct_10005>0</enabledStruct_10005>
+        <enabledStruct_10007>0</enabledStruct_10007>
+        <enabledStruct_10009>0</enabledStruct_10009>
+        <enabledStruct_10010>0</enabledStruct_10010>
+        <enabledStruct_10011>0</enabledStruct_10011>
+        <enabledStruct_10012>0</enabledStruct_10012>
+        <enabledStruct_10013>0</enabledStruct_10013>
+        <enabledStruct_10014>0</enabledStruct_10014>
+        <enabledStruct_10015>0</enabledStruct_10015>
+        <enabledStruct_10016>0</enabledStruct_10016>
+        <enabledStruct_10025>0</enabledStruct_10025>
+        <enabledStruct_10027>0</enabledStruct_10027>
+        <enabledStruct_10030>0</enabledStruct_10030>
+        <enabledStruct_10100>0</enabledStruct_10100>
+        <enabledId_3>0</enabledId_3>
+        <enabledId_32>0</enabledId_32>
+        <enabledId_33>0</enabledId_33>
+        <enabledId_60>0</enabledId_60>
+        <enabledId_68>0</enabledId_68>
+        <enabledId_75>0</enabledId_75>
+        <enabledId_82>0</enabledId_82>
+        <enabledId_94>0</enabledId_94>
+        <enabledId_104>0</enabledId_104>
+        <enabledId_106>0</enabledId_106>
+        <enabledId_107>0</enabledId_107>
+        <enabledId_111>0</enabledId_111>
+        <enabledId_112>0</enabledId_112>
+        <enabledId_113>0</enabledId_113>
+        <enabledId_114>0</enabledId_114>
+        <enabledId_122>0</enabledId_122>
+        <enabledId_123>0</enabledId_123>
+        <enabledId_124>1</enabledId_124>
+        <enabledId_125>0</enabledId_125>
+        <enabledId_128>0</enabledId_128>
+        <enabledId_133>0</enabledId_133>
+        <enabledId_139>0</enabledId_139>
+        <enabledId_10001>0</enabledId_10001>
+        <enabledId_10002>0</enabledId_10002>
+        <enabledId_10005>0</enabledId_10005>
+        <enabledId_10007>0</enabledId_10007>
+        <enabledId_10009>0</enabledId_10009>
+        <enabledId_10010>0</enabledId_10010>
+        <enabledId_10011>0</enabledId_10011>
+        <enabledId_10012>0</enabledId_10012>
+        <enabledId_10013>0</enabledId_10013>
+        <enabledId_10014>0</enabledId_10014>
+        <enabledId_10015>0</enabledId_10015>
+        <enabledId_10016>0</enabledId_10016>
+        <enabledId_10025>0</enabledId_10025>
+        <enabledId_10027>0</enabledId_10027>
+        <enabledId_10030>0</enabledId_10030>
+        <enabledId_10100>0</enabledId_10100>
+        <filterById_3 />
+        <filterById_32 />
+        <filterById_33 />
+        <filterById_60 />
+        <filterById_68 />
+        <filterById_75 />
+        <filterById_82 />
+        <filterById_94 />
+        <filterById_104 />
+        <filterById_106 />
+        <filterById_107 />
+        <filterById_111 />
+        <filterById_112 />
+        <filterById_113 />
+        <filterById_114 />
+        <filterById_122 />
+        <filterById_123 />
+        <filterById_124>2</filterById_124>
+        <filterById_125 />
+        <filterById_128 />
+        <filterById_133 />
+        <filterById_139 />
+        <filterById_10001 />
+        <filterById_10002 />
+        <filterById_10005 />
+        <filterById_10007 />
+        <filterById_10009 />
+        <filterById_10010 />
+        <filterById_10011 />
+        <filterById_10012 />
+        <filterById_10013 />
+        <filterById_10014 />
+        <filterById_10015 />
+        <filterById_10016 />
+        <filterById_10025 />
+        <filterById_10027 />
+        <filterById_10030 />
+        <filterById_10100 />
+        <rateFilter_3>1</rateFilter_3>
+        <rateFilter_32>1</rateFilter_32>
+        <rateFilter_33>1</rateFilter_33>
+        <rateFilter_60>1</rateFilter_60>
+        <rateFilter_68>1</rateFilter_68>
+        <rateFilter_75>1</rateFilter_75>
+        <rateFilter_82>1</rateFilter_82>
+        <rateFilter_94>1</rateFilter_94>
+        <rateFilter_104>1</rateFilter_104>
+        <rateFilter_106>1</rateFilter_106>
+        <rateFilter_107>1</rateFilter_107>
+        <rateFilter_111>1</rateFilter_111>
+        <rateFilter_112>1</rateFilter_112>
+        <rateFilter_113>1</rateFilter_113>
+        <rateFilter_114>1</rateFilter_114>
+        <rateFilter_122>1</rateFilter_122>
+        <rateFilter_123>1</rateFilter_123>
+        <rateFilter_124>1</rateFilter_124>
+        <rateFilter_125>1</rateFilter_125>
+        <rateFilter_128>1</rateFilter_128>
+        <rateFilter_133>1</rateFilter_133>
+        <rateFilter_139>1</rateFilter_139>
+        <rateFilter_10001>1</rateFilter_10001>
+        <rateFilter_10002>1</rateFilter_10002>
+        <rateFilter_10005>1</rateFilter_10005>
+        <rateFilter_10007>1</rateFilter_10007>
+        <rateFilter_10009>1</rateFilter_10009>
+        <rateFilter_10010>1</rateFilter_10010>
+        <rateFilter_10011>1</rateFilter_10011>
+        <rateFilter_10012>1</rateFilter_10012>
+        <rateFilter_10013>1</rateFilter_10013>
+        <rateFilter_10014>1</rateFilter_10014>
+        <rateFilter_10015>1</rateFilter_10015>
+        <rateFilter_10016>1</rateFilter_10016>
+        <rateFilter_10025>1</rateFilter_10025>
+        <rateFilter_10027>1</rateFilter_10027>
+        <rateFilter_10030>1</rateFilter_10030>
+        <rateFilter_10100>1</rateFilter_10100>
+    </plugin>
+    <plugin name="Jabil RGB" type="Data Filter" version="1.0">
+        <enabledStruct_3>0</enabledStruct_3>
+        <enabledStruct_32>0</enabledStruct_32>
+        <enabledStruct_33>0</enabledStruct_33>
+        <enabledStruct_60>0</enabledStruct_60>
+        <enabledStruct_68>0</enabledStruct_68>
+        <enabledStruct_75>0</enabledStruct_75>
+        <enabledStruct_82>0</enabledStruct_82>
+        <enabledStruct_94>0</enabledStruct_94>
+        <enabledStruct_104>0</enabledStruct_104>
+        <enabledStruct_106>0</enabledStruct_106>
+        <enabledStruct_107>0</enabledStruct_107>
+        <enabledStruct_111>0</enabledStruct_111>
+        <enabledStruct_112>0</enabledStruct_112>
+        <enabledStruct_113>0</enabledStruct_113>
+        <enabledStruct_114>0</enabledStruct_114>
+        <enabledStruct_122>0</enabledStruct_122>
+        <enabledStruct_123>0</enabledStruct_123>
+        <enabledStruct_124>1</enabledStruct_124>
+        <enabledStruct_125>0</enabledStruct_125>
+        <enabledStruct_128>0</enabledStruct_128>
+        <enabledStruct_133>0</enabledStruct_133>
+        <enabledStruct_139>0</enabledStruct_139>
+        <enabledStruct_10001>0</enabledStruct_10001>
+        <enabledStruct_10002>0</enabledStruct_10002>
+        <enabledStruct_10005>0</enabledStruct_10005>
+        <enabledStruct_10007>0</enabledStruct_10007>
+        <enabledStruct_10009>0</enabledStruct_10009>
+        <enabledStruct_10010>0</enabledStruct_10010>
+        <enabledStruct_10011>0</enabledStruct_10011>
+        <enabledStruct_10012>0</enabledStruct_10012>
+        <enabledStruct_10013>0</enabledStruct_10013>
+        <enabledStruct_10014>0</enabledStruct_10014>
+        <enabledStruct_10015>0</enabledStruct_10015>
+        <enabledStruct_10016>0</enabledStruct_10016>
+        <enabledStruct_10025>0</enabledStruct_10025>
+        <enabledStruct_10027>0</enabledStruct_10027>
+        <enabledStruct_10030>0</enabledStruct_10030>
+        <enabledStruct_10100>0</enabledStruct_10100>
+        <enabledId_3>0</enabledId_3>
+        <enabledId_32>0</enabledId_32>
+        <enabledId_33>0</enabledId_33>
+        <enabledId_60>0</enabledId_60>
+        <enabledId_68>0</enabledId_68>
+        <enabledId_75>0</enabledId_75>
+        <enabledId_82>0</enabledId_82>
+        <enabledId_94>0</enabledId_94>
+        <enabledId_104>0</enabledId_104>
+        <enabledId_106>0</enabledId_106>
+        <enabledId_107>0</enabledId_107>
+        <enabledId_111>0</enabledId_111>
+        <enabledId_112>0</enabledId_112>
+        <enabledId_113>0</enabledId_113>
+        <enabledId_114>0</enabledId_114>
+        <enabledId_122>0</enabledId_122>
+        <enabledId_123>0</enabledId_123>
+        <enabledId_124>1</enabledId_124>
+        <enabledId_125>0</enabledId_125>
+        <enabledId_128>0</enabledId_128>
+        <enabledId_133>0</enabledId_133>
+        <enabledId_139>0</enabledId_139>
+        <enabledId_10001>0</enabledId_10001>
+        <enabledId_10002>0</enabledId_10002>
+        <enabledId_10005>0</enabledId_10005>
+        <enabledId_10007>0</enabledId_10007>
+        <enabledId_10009>0</enabledId_10009>
+        <enabledId_10010>0</enabledId_10010>
+        <enabledId_10011>0</enabledId_10011>
+        <enabledId_10012>0</enabledId_10012>
+        <enabledId_10013>0</enabledId_10013>
+        <enabledId_10014>0</enabledId_10014>
+        <enabledId_10015>0</enabledId_10015>
+        <enabledId_10016>0</enabledId_10016>
+        <enabledId_10025>0</enabledId_10025>
+        <enabledId_10027>0</enabledId_10027>
+        <enabledId_10030>0</enabledId_10030>
+        <enabledId_10100>0</enabledId_10100>
+        <filterById_3 />
+        <filterById_32 />
+        <filterById_33 />
+        <filterById_60 />
+        <filterById_68 />
+        <filterById_75 />
+        <filterById_82 />
+        <filterById_94 />
+        <filterById_104 />
+        <filterById_106 />
+        <filterById_107 />
+        <filterById_111 />
+        <filterById_112 />
+        <filterById_113 />
+        <filterById_114 />
+        <filterById_122 />
+        <filterById_123 />
+        <filterById_124>1</filterById_124>
+        <filterById_125 />
+        <filterById_128 />
+        <filterById_133 />
+        <filterById_139 />
+        <filterById_10001 />
+        <filterById_10002 />
+        <filterById_10005 />
+        <filterById_10007 />
+        <filterById_10009 />
+        <filterById_10010 />
+        <filterById_10011 />
+        <filterById_10012 />
+        <filterById_10013 />
+        <filterById_10014 />
+        <filterById_10015 />
+        <filterById_10016 />
+        <filterById_10025 />
+        <filterById_10027 />
+        <filterById_10030 />
+        <filterById_10100 />
+        <rateFilter_3>1</rateFilter_3>
+        <rateFilter_32>1</rateFilter_32>
+        <rateFilter_33>1</rateFilter_33>
+        <rateFilter_60>1</rateFilter_60>
+        <rateFilter_68>1</rateFilter_68>
+        <rateFilter_75>1</rateFilter_75>
+        <rateFilter_82>1</rateFilter_82>
+        <rateFilter_94>1</rateFilter_94>
+        <rateFilter_104>1</rateFilter_104>
+        <rateFilter_106>1</rateFilter_106>
+        <rateFilter_107>1</rateFilter_107>
+        <rateFilter_111>1</rateFilter_111>
+        <rateFilter_112>1</rateFilter_112>
+        <rateFilter_113>1</rateFilter_113>
+        <rateFilter_114>1</rateFilter_114>
+        <rateFilter_122>1</rateFilter_122>
+        <rateFilter_123>1</rateFilter_123>
+        <rateFilter_124>1</rateFilter_124>
+        <rateFilter_125>1</rateFilter_125>
+        <rateFilter_128>1</rateFilter_128>
+        <rateFilter_133>1</rateFilter_133>
+        <rateFilter_139>1</rateFilter_139>
+        <rateFilter_10001>1</rateFilter_10001>
+        <rateFilter_10002>1</rateFilter_10002>
+        <rateFilter_10005>1</rateFilter_10005>
+        <rateFilter_10007>1</rateFilter_10007>
+        <rateFilter_10009>1</rateFilter_10009>
+        <rateFilter_10010>1</rateFilter_10010>
+        <rateFilter_10011>1</rateFilter_10011>
+        <rateFilter_10012>1</rateFilter_10012>
+        <rateFilter_10013>1</rateFilter_10013>
+        <rateFilter_10014>1</rateFilter_10014>
+        <rateFilter_10015>1</rateFilter_10015>
+        <rateFilter_10016>1</rateFilter_10016>
+        <rateFilter_10025>1</rateFilter_10025>
+        <rateFilter_10027>1</rateFilter_10027>
+        <rateFilter_10030>1</rateFilter_10030>
+        <rateFilter_10100>1</rateFilter_10100>
+    </plugin>
+    <plugin name="Log Extractor0" type="Log Extractor">
+        <defaultDirectoryPath>D:/Software/Murphy/Output/NW19circle_3E_c4-00-ad-10-bf-32_2022-03-15_135231_00003_perceptionLog_split00001/LogExtractor</defaultDirectoryPath>
+        <logNameBase>LogExtractor</logNameBase>
+        <autoNaming>1</autoNaming>
+        <loggerID>0</loggerID>
+        <shouldAddLabel>1</shouldAddLabel>
+        <shouldExtractStruct_3>0</shouldExtractStruct_3>
+        <shouldExtractStruct_32>0</shouldExtractStruct_32>
+        <shouldExtractStruct_33>0</shouldExtractStruct_33>
+        <shouldExtractStruct_60>0</shouldExtractStruct_60>
+        <shouldExtractStruct_68>0</shouldExtractStruct_68>
+        <shouldExtractStruct_75>0</shouldExtractStruct_75>
+        <shouldExtractStruct_82>0</shouldExtractStruct_82>
+        <shouldExtractStruct_94>0</shouldExtractStruct_94>
+        <shouldExtractStruct_104>0</shouldExtractStruct_104>
+        <shouldExtractStruct_106>0</shouldExtractStruct_106>
+        <shouldExtractStruct_107>0</shouldExtractStruct_107>
+        <shouldExtractStruct_111>0</shouldExtractStruct_111>
+        <shouldExtractStruct_112>0</shouldExtractStruct_112>
+        <shouldExtractStruct_113>0</shouldExtractStruct_113>
+        <shouldExtractStruct_114>0</shouldExtractStruct_114>
+        <shouldExtractStruct_122>0</shouldExtractStruct_122>
+        <shouldExtractStruct_123>0</shouldExtractStruct_123>
+        <shouldExtractStruct_124>1</shouldExtractStruct_124>
+        <shouldExtractStruct_125>0</shouldExtractStruct_125>
+        <shouldExtractStruct_128>0</shouldExtractStruct_128>
+        <shouldExtractStruct_133>0</shouldExtractStruct_133>
+        <shouldExtractStruct_139>0</shouldExtractStruct_139>
+        <shouldExtractStruct_10001>0</shouldExtractStruct_10001>
+        <shouldExtractStruct_10002>0</shouldExtractStruct_10002>
+        <shouldExtractStruct_10005>0</shouldExtractStruct_10005>
+        <shouldExtractStruct_10007>0</shouldExtractStruct_10007>
+        <shouldExtractStruct_10009>0</shouldExtractStruct_10009>
+        <shouldExtractStruct_10010>0</shouldExtractStruct_10010>
+        <shouldExtractStruct_10011>0</shouldExtractStruct_10011>
+        <shouldExtractStruct_10012>0</shouldExtractStruct_10012>
+        <shouldExtractStruct_10013>0</shouldExtractStruct_10013>
+        <shouldExtractStruct_10014>0</shouldExtractStruct_10014>
+        <shouldExtractStruct_10015>0</shouldExtractStruct_10015>
+        <shouldExtractStruct_10016>0</shouldExtractStruct_10016>
+        <shouldExtractStruct_10025>0</shouldExtractStruct_10025>
+        <shouldExtractStruct_10027>0</shouldExtractStruct_10027>
+        <shouldExtractStruct_10030>0</shouldExtractStruct_10030>
+        <shouldExtractStruct_10100>0</shouldExtractStruct_10100>
+    </plugin>
+    <plugin name="Log Player0" type="Log Player">
+        <logName>T:/current/Users/Staff/Murphy/2022_XML/NW19circle_3E_c4-00-ad-10-bf-32_2022-03-15_135231_00003_perceptionLog_split00001.log</logName>
+        <isRealTimePlayback>1</isRealTimePlayback>
+    </plugin>
+    <plugin name="Multi-Spectral" type="Data Filter" version="1.0">
+        <enabledStruct_3>0</enabledStruct_3>
+        <enabledStruct_32>0</enabledStruct_32>
+        <enabledStruct_33>0</enabledStruct_33>
+        <enabledStruct_60>0</enabledStruct_60>
+        <enabledStruct_68>0</enabledStruct_68>
+        <enabledStruct_75>0</enabledStruct_75>
+        <enabledStruct_82>0</enabledStruct_82>
+        <enabledStruct_94>0</enabledStruct_94>
+        <enabledStruct_104>0</enabledStruct_104>
+        <enabledStruct_106>0</enabledStruct_106>
+        <enabledStruct_107>0</enabledStruct_107>
+        <enabledStruct_111>0</enabledStruct_111>
+        <enabledStruct_112>0</enabledStruct_112>
+        <enabledStruct_113>0</enabledStruct_113>
+        <enabledStruct_114>0</enabledStruct_114>
+        <enabledStruct_122>0</enabledStruct_122>
+        <enabledStruct_123>0</enabledStruct_123>
+        <enabledStruct_124>1</enabledStruct_124>
+        <enabledStruct_125>0</enabledStruct_125>
+        <enabledStruct_128>0</enabledStruct_128>
+        <enabledStruct_133>0</enabledStruct_133>
+        <enabledStruct_139>0</enabledStruct_139>
+        <enabledStruct_10001>0</enabledStruct_10001>
+        <enabledStruct_10002>0</enabledStruct_10002>
+        <enabledStruct_10005>0</enabledStruct_10005>
+        <enabledStruct_10007>0</enabledStruct_10007>
+        <enabledStruct_10009>0</enabledStruct_10009>
+        <enabledStruct_10010>0</enabledStruct_10010>
+        <enabledStruct_10011>0</enabledStruct_10011>
+        <enabledStruct_10012>0</enabledStruct_10012>
+        <enabledStruct_10013>0</enabledStruct_10013>
+        <enabledStruct_10014>0</enabledStruct_10014>
+        <enabledStruct_10015>0</enabledStruct_10015>
+        <enabledStruct_10016>0</enabledStruct_10016>
+        <enabledStruct_10025>0</enabledStruct_10025>
+        <enabledStruct_10027>0</enabledStruct_10027>
+        <enabledStruct_10030>0</enabledStruct_10030>
+        <enabledStruct_10100>0</enabledStruct_10100>
+        <enabledId_3>0</enabledId_3>
+        <enabledId_32>0</enabledId_32>
+        <enabledId_33>0</enabledId_33>
+        <enabledId_60>0</enabledId_60>
+        <enabledId_68>0</enabledId_68>
+        <enabledId_75>0</enabledId_75>
+        <enabledId_82>0</enabledId_82>
+        <enabledId_94>0</enabledId_94>
+        <enabledId_104>0</enabledId_104>
+        <enabledId_106>0</enabledId_106>
+        <enabledId_107>0</enabledId_107>
+        <enabledId_111>0</enabledId_111>
+        <enabledId_112>0</enabledId_112>
+        <enabledId_113>0</enabledId_113>
+        <enabledId_114>0</enabledId_114>
+        <enabledId_122>0</enabledId_122>
+        <enabledId_123>0</enabledId_123>
+        <enabledId_124>1</enabledId_124>
+        <enabledId_125>0</enabledId_125>
+        <enabledId_128>0</enabledId_128>
+        <enabledId_133>0</enabledId_133>
+        <enabledId_139>0</enabledId_139>
+        <enabledId_10001>0</enabledId_10001>
+        <enabledId_10002>0</enabledId_10002>
+        <enabledId_10005>0</enabledId_10005>
+        <enabledId_10007>0</enabledId_10007>
+        <enabledId_10009>0</enabledId_10009>
+        <enabledId_10010>0</enabledId_10010>
+        <enabledId_10011>0</enabledId_10011>
+        <enabledId_10012>0</enabledId_10012>
+        <enabledId_10013>0</enabledId_10013>
+        <enabledId_10014>0</enabledId_10014>
+        <enabledId_10015>0</enabledId_10015>
+        <enabledId_10016>0</enabledId_10016>
+        <enabledId_10025>0</enabledId_10025>
+        <enabledId_10027>0</enabledId_10027>
+        <enabledId_10030>0</enabledId_10030>
+        <enabledId_10100>0</enabledId_10100>
+        <filterById_3 />
+        <filterById_32 />
+        <filterById_33 />
+        <filterById_60 />
+        <filterById_68 />
+        <filterById_75 />
+        <filterById_82 />
+        <filterById_94 />
+        <filterById_104 />
+        <filterById_106 />
+        <filterById_107 />
+        <filterById_111 />
+        <filterById_112 />
+        <filterById_113 />
+        <filterById_114 />
+        <filterById_122 />
+        <filterById_123 />
+        <filterById_124>99</filterById_124>
+        <filterById_125 />
+        <filterById_128 />
+        <filterById_133 />
+        <filterById_139 />
+        <filterById_10001 />
+        <filterById_10002 />
+        <filterById_10005 />
+        <filterById_10007 />
+        <filterById_10009 />
+        <filterById_10010 />
+        <filterById_10011 />
+        <filterById_10012 />
+        <filterById_10013 />
+        <filterById_10014 />
+        <filterById_10015 />
+        <filterById_10016 />
+        <filterById_10025 />
+        <filterById_10027 />
+        <filterById_10030 />
+        <filterById_10100 />
+        <rateFilter_3>1</rateFilter_3>
+        <rateFilter_32>1</rateFilter_32>
+        <rateFilter_33>1</rateFilter_33>
+        <rateFilter_60>1</rateFilter_60>
+        <rateFilter_68>1</rateFilter_68>
+        <rateFilter_75>1</rateFilter_75>
+        <rateFilter_82>1</rateFilter_82>
+        <rateFilter_94>1</rateFilter_94>
+        <rateFilter_104>1</rateFilter_104>
+        <rateFilter_106>1</rateFilter_106>
+        <rateFilter_107>1</rateFilter_107>
+        <rateFilter_111>1</rateFilter_111>
+        <rateFilter_112>1</rateFilter_112>
+        <rateFilter_113>1</rateFilter_113>
+        <rateFilter_114>1</rateFilter_114>
+        <rateFilter_122>1</rateFilter_122>
+        <rateFilter_123>1</rateFilter_123>
+        <rateFilter_124>1</rateFilter_124>
+        <rateFilter_125>1</rateFilter_125>
+        <rateFilter_128>1</rateFilter_128>
+        <rateFilter_133>1</rateFilter_133>
+        <rateFilter_139>1</rateFilter_139>
+        <rateFilter_10001>1</rateFilter_10001>
+        <rateFilter_10002>1</rateFilter_10002>
+        <rateFilter_10005>1</rateFilter_10005>
+        <rateFilter_10007>1</rateFilter_10007>
+        <rateFilter_10009>1</rateFilter_10009>
+        <rateFilter_10010>1</rateFilter_10010>
+        <rateFilter_10011>1</rateFilter_10011>
+        <rateFilter_10012>1</rateFilter_10012>
+        <rateFilter_10013>1</rateFilter_10013>
+        <rateFilter_10014>1</rateFilter_10014>
+        <rateFilter_10015>1</rateFilter_10015>
+        <rateFilter_10016>1</rateFilter_10016>
+        <rateFilter_10025>1</rateFilter_10025>
+        <rateFilter_10027>1</rateFilter_10027>
+        <rateFilter_10030>1</rateFilter_10030>
+        <rateFilter_10100>1</rateFilter_10100>
+    </plugin>
+    <plugin name="to8" type="Color Conversion" version="0.1">
+        <color>8bits</color>
+        <slots />
+    </plugin>
+    <connection>
+        <link from="Contrast" to="to8" />
+        <link from="Data Filter0" to="Log Extractor0" />
+        <link from="Image Format Changer0" to="Contrast" />
+        <link from="Jabil NGR" to="Image Format Changer0" />
+        <link from="Jabil RGB" to="Image Extractor" />
+        <link from="Log Player0" to="CAN Extractor0" />
+        <link from="Log Player0" to="Data Filter0" />
+        <link from="Log Player0" to="Jabil NGR" />
+        <link from="Log Player0" to="Jabil RGB" />
+        <link from="Log Player0" to="Multi-Spectral" />
+        <link from="Multi-Spectral" to="Image Format Changer0" />
+        <link from="to8" to="Image Extractor" />
+    </connection>
+    <custom>
+        <gui>
+            <position name="CAN Extractor0" x="-236" y="471" />
+            <position name="Contrast" x="103" y="282" />
+            <position name="Data Filter0" x="-200" y="4" />
+            <position name="Image Extractor" x="342" y="169" />
+            <position name="Image Format Changer0" x="-32" y="283" />
+            <position name="Jabil NGR" x="-183" y="233" />
+            <position name="Jabil RGB" x="-188" y="123" />
+            <position name="Log Extractor0" x="-43" y="-12" />
+            <position name="Log Player0" x="-330" y="233" />
+            <position name="Multi-Spectral" x="-176" y="336" />
+            <position name="to8" x="194" y="286" />
+        </gui>
+    </custom>
+</system>
